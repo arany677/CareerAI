@@ -1,27 +1,18 @@
-const fs = require('fs');
-const path = require('path');
+const mongoose = require('mongoose');
 
-const STORE_PATH = path.join(__dirname, '../db_store.json');
-
-const initializeStore = () => {
-  if (!fs.existsSync(STORE_PATH)) {
-    fs.writeFileSync(STORE_PATH, JSON.stringify({ users: [], resumes: [], coverletters: [] }, null, 2));
-  }
-};
-
-const getDb = () => {
-  initializeStore();
+const connectDB = async () => {
   try {
-    const data = fs.readFileSync(STORE_PATH, 'utf8');
-    return JSON.parse(data);
-  } catch (err) {
-    return { users: [], resumes: [], coverletters: [] };
+    if (!process.env.MONGODB_URI) {
+      throw new Error('MONGODB_URI is not defined in environment variables');
+    }
+    const conn = await mongoose.connect(process.env.MONGODB_URI, {
+      serverSelectionTimeoutMS: 5000
+    });
+    console.log(`✅ MongoDB Connected: ${conn.connection.host}`);
+  } catch (error) {
+    console.error(`❌ MongoDB Connection Error: ${error.message}`);
+    process.exit(1); // কানেক্ট না হলে সার্ভার বন্ধ করে দাও
   }
 };
 
-const saveDb = (data) => {
-  initializeStore();
-  fs.writeFileSync(STORE_PATH, JSON.stringify(data, null, 2));
-};
-
-module.exports = { getDb, saveDb };
+module.exports = connectDB;
