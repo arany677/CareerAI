@@ -4,7 +4,7 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 import axios from 'axios';
 import { useRouter } from 'next/navigation';
 
-export const API_URL = 'http://localhost:5000/api';
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api';
 
 // Create axios instance with default configurations
 export const api = axios.create({
@@ -111,16 +111,16 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     try {
       const response = await api.post('/auth/login', { email, password });
       const { token: userToken, ...userData } = response.data;
-      
+
       localStorage.setItem('careerai_token', userToken);
       setToken(userToken);
       setUser(response.data);
       api.defaults.headers.common['Authorization'] = `Bearer ${userToken}`;
-      
+
       // Fetch full user profile
       const userMe = await api.get('/auth/me');
       setUser(userMe.data);
-      
+
       router.push('/dashboard');
     } catch (error: any) {
       setLoading(false);
@@ -133,15 +133,15 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     try {
       const response = await api.post('/auth/register', { name, email, password });
       const { token: userToken } = response.data;
-      
+
       localStorage.setItem('careerai_token', userToken);
       setToken(userToken);
       api.defaults.headers.common['Authorization'] = `Bearer ${userToken}`;
-      
+
       // Fetch full user profile
       const userMe = await api.get('/auth/me');
       setUser(userMe.data);
-      
+
       router.push('/dashboard');
     } catch (error: any) {
       setLoading(false);
