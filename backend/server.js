@@ -43,7 +43,7 @@ app.get('/health', (req, res) => {
 // Global Error Handler
 app.use((err, req, res, next) => {
   console.error(err.stack);
-  res.status(500).json({ 
+  res.status(500).json({
     message: err.message || 'Something broke on the server!',
     error: process.env.NODE_ENV === 'production' ? {} : err
   });
@@ -53,4 +53,5 @@ const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
   console.log(`Server running in ${process.env.NODE_ENV || 'development'} mode on port ${PORT}`);
+  module.exports = app;
 });
