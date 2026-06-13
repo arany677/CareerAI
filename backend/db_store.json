@@ -1,0 +1,147 @@
+{
+  "users": [
+    {
+      "_id": "admin_user_id_0000000000001",
+      "name": "System Administrator",
+      "email": "admin@careerai.com",
+      "role": "admin",
+      "profile": {
+        "targetRole": "Full Stack Architect",
+        "skills": [
+          "JavaScript",
+          "TypeScript",
+          "React",
+          "Node.js",
+          "Express.js",
+          "MongoDB",
+          "Docker",
+          "AWS"
+        ],
+        "experience": [
+          {
+            "company": "Tech Solutions Corp",
+            "position": "Lead Web Engineer",
+            "duration": "2023 - Present",
+            "description": "Supervised 6-person frontend engineering guild and migrated server deployments to Docker containers, increasing speeds by 30%."
+          }
+        ],
+        "education": [
+          {
+            "school": "State Technical University",
+            "degree": "Bachelor of Science",
+            "fieldOfStudy": "Computer Science",
+            "year": "2022"
+          }
+        ]
+      },
+      "createdAt": "2026-06-11T06:02:20.245Z",
+      "password": "$2a$10$UN5uOdiSaMheR3P/w8Y2lOfkk7y8pEM9xfQBwEppMSXC1R7LZJVD."
+    },
+    {
+      "_id": "demo_user_id_0000000000002",
+      "name": "Demo Candidate",
+      "email": "demo@careerai.com",
+      "role": "user",
+      "profile": {
+        "targetRole": "Frontend Developer",
+        "skills": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "React",
+          "Git"
+        ],
+        "experience": [
+          {
+            "company": "Creative Web Agency",
+            "position": "Junior React Developer",
+            "duration": "2024 - 2025",
+            "description": "Created custom reusable design system elements and optimized site styling assets, improving mobile performance metrics."
+          }
+        ],
+        "education": [
+          {
+            "school": "Global Tech Institute",
+            "degree": "Associate Degree",
+            "fieldOfStudy": "Web Development",
+            "year": "2023"
+          }
+        ]
+      },
+      "createdAt": "2026-06-11T06:02:20.245Z",
+      "password": "$2a$10$UN5uOdiSaMheR3P/w8Y2lOE1ek27vr.QymatsgTrM6NCjH0Jt6J4e"
+    },
+    {
+      "_id": "39680633225516358be6da5b",
+      "name": "Arany",
+      "email": "aranyhasan677@gmail.com",
+      "password": "$2a$10$oSvMshPTrTCRIOY.FfKsL.7BxbBzsWOSwwjaMTAQdQ4uPshTEPhI6",
+      "role": "user",
+      "profile": {
+        "skills": [
+          "Javascript",
+          "React",
+          "Git",
+          "Tailwind",
+          "Css",
+          "Html"
+        ],
+        "targetRole": "Frontend Developer",
+        "experience": [],
+        "education": []
+      },
+      "createdAt": "2026-06-11T07:19:24.134Z"
+    }
+  ],
+  "resumes": [
+    {
+      "_id": "20c11197735f4f0b40dcdf9e",
+      "userId": "39680633225516358be6da5b",
+      "resumeFile": "39680633225516358be6da5b-1781325648012.pdf",
+      "resumeScore": 70,
+      "analysisResult": {
+        "score": 70,
+        "strengths": [
+          "Clear and concise professional summary highlighting relevant skills and career aspirations.",
+          "Strong list of relevant frontend development skills including modern frameworks and tools (React.js, Tailwind CSS).",
+          "Well-articulated projects demonstrating practical application of skills and problem-solving abilities.",
+          "Good use of keywords that are highly relevant to Frontend Developer roles."
+        ],
+        "weaknesses": [
+          "Lack of professional work experience (internships, part-time jobs) which is crucial for entry-level roles.",
+          "The 'Experience' section is vague and generic, lacking quantifiable achievements or specific impacts for projects.",
+          "The 'Career Goal' section is largely redundant with the 'Professional Summary', causing repetition.",
+          "Absence of metrics or quantifiable results in project descriptions to showcase impact and scope."
+        ],
+        "suggestions": [
+          "Actively seek internships or part-time developer roles to gain professional experience and strengthen the 'Experience' section.",
+          "For projects, quantify achievements wherever possible (e.g., 'Developed a responsive interface that improved user engagement by X%', 'Managed data for Y number of users').",
+          "Integrate the key elements of your 'Career Goal' into your 'Professional Summary' to create a more impactful and concise introduction, then remove the separate 'Career Goal' section.",
+          "Consider renaming 'Experience' to 'Relevant Projects' if it primarily covers academic and personal work, ensuring clarity for recruiters.",
+          "If available and strong, include your GPA or any academic awards/honors under the 'Education' section."
+        ],
+        "atsCompatibility": "The resume demonstrates good ATS compatibility due to its clean and standard formatting, clear section headings (Professional Summary, Education, Skills, Projects), and the inclusion of highly relevant keywords for frontend development roles (e.g., HTML, CSS, JavaScript, React.js, Responsive Web Design, Git & GitHub). The bulleted lists for skills and projects are easily parsed by an ATS. However, the 'Experience' section, titled 'Frontend Developer | Personal & Academic Projects', might be a minor point of confusion for some ATS systems designed to parse traditional employment history. While it conveys activity, it doesn't align with standard 'Company Name | Job Title | Dates' formats, potentially leading an ATS to not fully categorize it as professional work experience. To improve this, consider rephrasing or integrating these details more explicitly within a 'Projects' section if no formal work experience exists.",
+        "rawText": "\n\nArany Hasan\nDhaka, Bangladesh | 01625576240 | aranyhasan677@gmail.com\nGitHub: github.com/arany677\nProfessional Summary\nPassionate and motivated Frontend Developer and Computer Science student with hands-on experience in building\nresponsive and user-friendly web applications. Skilled in creating modern UI designs and interactive frontend systems\nusing contemporary web technologies. Strong interest in Artificial Intelligence and software development with a goal of\nbuilding impactful digital solutions and continuously improving technical and problem-solving skills.\nEducation\nAhsanullah University of Science and Technology (AUST)\nBachelor of Science in Computer Science and Engineering\nCurrent Status: 4th Year, 1st Semester\nSkills\n•\nFrontend Development\n•\nHTML, CSS, JavaScript\n•\nReact.js\n•\nResponsive Web Design\n•\nTailwind CSS\n•\nGit & GitHub\n•\nUI/UX Focused Development\n•\nProblem Solving and Team Collaboration\nProjects\n•\nMrittika – A digital craft-focused web platform designed to connect users with rural artisan products through a\nmodern and responsive interface.\n•\nEduPulse – An educational platform concept featuring organized course and learning management functionality\nwith user-friendly UI design.\n•\nHospitaAll – A healthcare-related web application designed to improve hospital service accessibility and\nmanagement through a clean frontend experience.\nExperience\nFrontend Developer | Personal & Academic Projects\nWorked on multiple frontend and UI-focused projects involving responsive design, component-based architecture, and\ninteractive user experiences. Experienced in collaborating on academic and self-driven development projects while\ncontinuously learning modern development practices.\nCareer Goal\n\nAspiring to build a career in software engineering and Artificial Intelligence by developing innovative and impactful\ndigital products. Passionate about continuous learning, improving technical expertise, and contributing to meaningful\nreal-world solutions."
+      },
+      "uploadedAt": "2026-06-13T04:40:57.137Z"
+    }
+  ],
+  "coverletters": [
+    {
+      "_id": "fcb25d936053c363eb42caa5",
+      "userId": "39680633225516358be6da5b",
+      "companyName": "Google",
+      "position": "As a frontend developer",
+      "generatedLetter": "Dear Hiring Manager,\n\nI am writing to express my profound interest in the Frontend Developer position at Google. As a highly motivated and skilled Computer Science student with a genuine passion for creating intuitive and impactful web experiences, I am confident that my foundational expertise and innovative mindset align perfectly with Google’s commitment to excellence and user-centric design. The opportunity to contribute to a company renowned for shaping the future of technology is incredibly inspiring.\n\nMy hands-on experience in frontend development, honed through a series of significant personal and academic projects, has equipped me with a robust skill set in modern web technologies. I am proficient in JavaScript, React.js, HTML, CSS, and Tailwind CSS, and adept at leveraging Git for version control. My project portfolio, including Mrittika, EduPulse, and HospitaAll, demonstrates my ability to build responsive, user-friendly web applications with a keen focus on UI/UX, component-based architecture, and interactive user experiences. These projects have provided practical exposure to tackling real-world design and functionality challenges, developing a strong sense of problem-solving and collaboration.\n\nWhat truly drives me is the ambition to build innovative and impactful digital products, coupled with a commitment to continuous learning and technical improvement. This aspiration, combined with my enthusiasm for contributing to meaningful solutions, resonates deeply with Google's culture of innovation and high standards. I am eager to apply my analytical capabilities, collaborative spirit, and dedication to excellence to a world-class engineering team, contributing to projects that touch millions of users globally.\n\nThank you for considering my application. I am enthusiastic about the prospect of discussing how my skills and passion can contribute to Google's mission and look forward to the possibility of an interview.",
+      "createdAt": "2026-06-13T05:06:02.248Z"
+    },
+    {
+      "_id": "a0e8ed3e7288069658ca3ade",
+      "userId": "39680633225516358be6da5b",
+      "companyName": "Innovate Solutions Inc.",
+      "position": "Junior Frontend Developer",
+      "generatedLetter": "Dear Hiring Manager,\n\nI am writing to express my enthusiastic interest in the Junior Frontend Developer position at Innovate Solutions Inc. As a passionate and highly motivated Computer Science student with a solid foundation in modern web technologies, I am eager to apply my skills and grow within a forward-thinking and dynamic team like yours.\n\nMy attached resume provides a detailed overview of my hands-on experience in building responsive and user-friendly web applications. I have actively utilized JavaScript, React, HTML, CSS, and Tailwind CSS to craft engaging interfaces. Through personal and academic projects such as Mrittika, EduPulse, and HospitaAll, I have honed my abilities in UI/UX focused development, component-based architecture, and efficient version control using Git. I thrive on the challenge of transforming design concepts into functional and visually appealing web experiences.\n\nWhile my experience to date has been within academic and self-driven projects, I am confident that my strong problem-solving abilities, keen eye for detail, and dedication to continuous learning would allow me to quickly become a valuable and contributing member of your development team. I am particularly drawn to Innovate Solutions Inc.'s reputation for innovation and commitment to creating impactful digital solutions.\n\nThank you for considering my application. I am genuinely excited about the possibility of contributing my passion for frontend development to Innovate Solutions Inc. and am available for an interview at your earliest convenience to discuss how my skills align with your team's needs.\n\nSincerely,\nArany",
+      "createdAt": "2026-06-13T05:11:35.716Z"
+    }
+  ]
+}
